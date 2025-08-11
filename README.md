@@ -10,6 +10,35 @@ Gain more practical experience by using this repository that contains a Python W
 1. Enable your [GitHub Copilot service](https://github.com/github-copilot/signup)
 1. Open [this repository with Codespaces](https://codespaces.new/MicrosoftDocs/mslearn-copilot-codespaces-python)
 
+## 🚀 Getting Started
+
+### Run in Dev Container (Recommended)
+
+1. Open this repository in [GitHub Codespaces](https://codespaces.new/MicrosoftDocs/mslearn-advanced-copilot) or in VS Code with the Dev Containers extension.
+2. The development environment will automatically build and install dependencies.
+3. The FastAPI server will start on port 8000.
+4. Open the API documentation in your browser at [http://localhost:8000/docs](http://localhost:8000/docs).
+
+### Run Locally
+
+1. Install Python 3.10 and [pip](https://pip.pypa.io/en/stable/installation/).
+2. Install dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+3. Start the FastAPI server:
+    ```sh
+    uvicorn main:app --reload
+    ```
+4. Open [http://localhost:8000/docs](http://localhost:8000/docs) in your browser to view the API documentation.
+
+### Run Tests
+
+To run the tests, use:
+```sh
+pytest
+```
+
 ## 💪🏽 Exercise
 The current API is not exposing country/{country} which needs to be implemented to list cities. The route should allow only GET HTTP requests with a JSON response providing information from the historical high and low for that country, city, and given month.
 
